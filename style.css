@@ -1,0 +1,50 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header_main,
+.container_header {
+    min-width: 100%;   
+}
+
+.logo_header,
+.img_logo {
+    height: 20px;
+}
+
+.title_header {
+    font-size: 24px;
+}
+
+.navbar-toggler-icon {
+    width: 24px;
+    height: 18px;
+}
+
+.icone_msg_header {
+    height: 32px;
+}
+
+.icone_perfil_menu {
+    height: 24px;
+}
+
+.icone_menu {
+    height: 16px;
+}
+
+.nome_perfil {
+    text-decoration: none;
+}
+
+.icone_menu_perfil {
+    height: 20px;
+}
+
+.icone_menu_dialgo {
+    height: 32px;
+}
+
+.icone_menu_long {
+    height: 26px;
+}
