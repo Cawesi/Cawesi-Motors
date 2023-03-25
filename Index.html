@@ -21,7 +21,7 @@
 <body>
 
     <div class="container m-0 p-0 container_header">
-        <header class="row d-xl-none bg-light m-0 py-2 header_main">
+        <header class="row d-xl-none bg-light m-0 py-2 header_main fixed-top">
             
             <div class="col-8 col-sm-9 col-md-7 d-flex align-items-center border-end ps-4">
                 <h1 class="m-0 title_header">cawesi</h1>
@@ -173,7 +173,7 @@
             </div>
         </header>
 
-        <header class="d-none d-xl-block w-100 bg-white">
+        <header class="d-none d-xl-block w-100 bg-white py-2 fixed-top">
             <nav class="d-flex flex-row my-3">
                 <div class=" col- 2 container-fluid d-flex justify-content-center align-items-center">
                   <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
@@ -340,7 +340,7 @@
             </nav>
         </header>
 
-        <section class="row w-100 m-0">
+        <section class="row w-100 m-0 box_relative">
             <div id="carouselExample" class="carousel slide p-0" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -369,35 +369,121 @@
                 </button>
             </div>
 
-            
+            <div class="container py-4 px-5 border-2 mx-auto bg-white box_search rounded-3">
+                <div class="row">
+                    <nav class="nav ps-3 d-flex justify-content-evenly justify-content-md-start">
+                        <a class="nav-link active text-black py-1 px-0 border-bottom border-3 border-danger text-center fs-5" href="#">Comprar <br class="d-block d-md-none"> carros</a>
+                        <a class="nav-link text-black py-1 text-center fs-5" href="#">Comprar <br class="d-block d-md-none"> motos</a>
+                        <a class="nav-link text-secondary py-1 d-none d-md-inline fs-5" href="#">Quero vender</a>
+                        <a class="nav-link text-secondary py-1 d-none d-md-inline fs-5">Financiar</a>
+                    </nav>
+                </div>
+    
+                <div class="row mt-4">
+                    <div class="col-12 col-md-8  col-lg-9 d-block d-md-inline">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><img src="./Images/icones_menu/search.svg" alt="#"></span>
+                            <input type="text" class="form-control py-3" placeholder="Digite marca ou modelo do carro">
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <button type="button" class="btn btn-danger w-100 w-md-1 py-2 py-md-3">VER OFERTAS</button>
+                    </div> 
+                </div>
+            </div>
 
         </section>
 
-        <div class="container p-3 bg-white border-2 input_search">
+        <div class="container py-4 px-5 border-2 mx-auto bg-white box_search_2 rounded-3 d-block d-lg-none">
             <div class="row">
                 <nav class="nav ps-3 d-flex justify-content-evenly justify-content-md-start">
-                    <a class="nav-link active text-black py-1 px-0 border-bottom border-3 border-danger text-center" href="#">Comprar <br class="d-block d-md-none"> carros</a>
-                    <a class="nav-link text-black py-1 text-center" href="#">Comprar <br class="d-block d-md-none"> motos</a>
-                    <a class="nav-link text-secondary py-1 d-none d-md-inline" href="#">Quero vender</a>
-                    <a class="nav-link text-secondary py-1 d-none d-md-inline">Financiar</a>
+                    <a class="nav-link active text-black py-1 px-0 border-bottom border-3 border-danger text-center fs-5" href="#">Comprar <br class="d-block d-md-none"> carros</a>
+                    <a class="nav-link text-black py-1 text-center fs-5" href="#">Comprar <br class="d-block d-md-none"> motos</a>
+                    <a class="nav-link text-secondary py-1 d-none d-md-inline fs-5" href="#">Quero vender</a>
+                    <a class="nav-link text-secondary py-1 d-none d-md-inline fs-5">Financiar</a>
                 </nav>
             </div>
 
-            <div class="row mt-3">
-                <div class="col-12 col-md-6 d-block d-md-inline">
+            <div class="row mt-4">
+                <div class="col-12 col-md-8  col-lg-9 d-block d-md-inline">
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1"><img src="./Images/icones_menu/search.svg" alt="#"></span>
-                        <input type="text" class="form-control" placeholder="Digite marca ou modelo do carro">
+                        <input type="text" class="form-control py-3" placeholder="Digite marca ou modelo do carro">
                     </div>
                 </div>
     
-    
-                <div class="col-12 col-md-3 col-lg-3">
-                    <button type="button" class="btn btn-danger w-100 w-md-1">VER OFERTAS</button>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <button type="button" class="btn btn-danger w-100 w-md-1 py-2 py-md-3">VER OFERTAS</button>
                 </div> 
             </div>
-            
         </div>
+
+        <section class="categoria mt-5">
+
+            <h2 class="text-center">Categorias</h2>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-center flex-nowrap flex-sm-wrap gap-4 gap-sm-5 py-4 px-2 px-sm-5">
+                
+                <div class="card text-bg-dark card_categoria">
+                    <img src="./Images/categorias/belo-carro.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Carros de Luxo</h5>
+                    </div>
+                </div>   
+                
+                <div class="card text-bg-dark card_categoria">
+                    <img src="./Images/categorias/carro-esporte-de-luxo-com-luzes-de-xenonio-vista-frontal-dirija-por-do-sol.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Carros Sedan</h5>
+                    </div>
+                </div>
+
+                <div class="card text-bg-dark card_categoria">
+                    <img src="./Images/categorias/um-mini-cupe-vermelho-dirigindo-na-estrada.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Carros Hatch</h5>
+                    </div>
+                </div>
+                    
+                <div class="card text-bg-dark card_categoria">
+                    <img src="./Images/categorias/um-estacionamento-de-jipe-azul-na-zona-publica (cópia).jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Carros SUV</h5>
+                    </div>
+                </div>
+
+                <div class="card text-bg-dark card_categoria">
+                    <img src="./Images/categorias/um-carro-antigo-preto-dirigindo-na-estrada-ansiando-pela-floresta.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Carros Econômicos</h5>
+                    </div>
+                </div>
+
+                <div class="card text-bg-dark card_categoria">
+                    <img src="./Images/categorias/sedan-metalico-prateado-do-esporte-da-cor-na-estrada.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Carros Elêtrico</h5>
+                    </div>
+                </div>
+
+                <div class="card text-bg-dark card_categoria">
+                    <img src="./Images/categorias/motor-vermelho-de-bicicleta-na-estrada.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Carros Elêtrico</h5>
+                    </div>
+                </div>
+
+                <div class="card text-bg-dark card_categoria">
+                    <img src="./Images/categorias/carro-moderno-branco-de-vista-lateral-ao-ar-livre.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Picapes</h5>
+                    </div>
+                </div>
+            </div>
+                
+              
+        </section>
         
     </div>
 
