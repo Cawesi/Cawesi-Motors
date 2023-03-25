@@ -129,8 +129,19 @@ body {
         width: 150px;
         height: 200px;
 
-        margin: 40px auto;
-        
+        margin: 40px auto;   
     }
+}
 
+.card_categoria:hover {
+    border: 2px solid red;
+}
+
+
+.imgtest {
+    height: 250px;
+}
+
+.card-body {
+    background-color: #ecedf2;
 }
