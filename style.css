@@ -48,3 +48,8 @@ body {
 .icone_menu_long {
     height: 26px;
 }
+
+::-webkit-input-placeholder {
+    font-size: 12px;
+}
+
